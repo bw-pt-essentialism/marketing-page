@@ -1,1 +1,64 @@
 // home-page.less
+.subHead {
+    position: -webkit-sticky;
+    position: sticky;
+}
+.mainHead {
+    .flex(column, space-between, center);
+    position: fixed;
+    color: @headColor;
+    background-color: @headBGC;
+    border: solid 3px @headerborder;
+    padding: 2.5rem;
+    top:0;
+
+}
+.mainDes {
+    .flex(column, space-between, center);
+    text-align: center;
+    padding: 5rem;
+    background-color: green;
+    height:800px;
+}
+.subHead{
+    .flex(column, space-between, center);
+    color: @headColor;
+    background-color: @headBGC;
+    border: solid 3px @headerborder;
+    padding: 2.5rem;
+    top:0;
+    // bottom:0;
+    // margin-top:96px;
+    // top: 96px;
+}
+.subDes {
+    .flex(column, space-between, center);
+    padding: 1.5rem;
+    height:500px;
+    
+    
+}
+.teamMember{
+    .flex(row, space-between, center);
+    .marginTB(.5rem);
+    .marginLR(3rem);
+}
+.mainPageProPic {
+   
+    height: auto;
+    width: 25%;
+}
+.teamTitle {
+    background-color:@textBG;
+    text-align: center;
+    justify-self:auto;
+}
+.botBar {
+    width: 100%;
+    height: .5rem;
+    background-color: @darkRichBlue;
+}
+.mainHead, .subHead {
+    position: -webkit-sticky;
+    position: sticky;
+}
