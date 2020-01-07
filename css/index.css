@@ -198,8 +198,11 @@ a:visited {
   align-items: center;
   text-align: center;
   padding: 5rem;
+  padding-top: 10rem;
+  color: #EAEAEA;
   background-image: url('../img/zen_stones.jpeg');
-  height: 800px;
+  min-height: 800px;
+  background-size: 400%;
 }
 .subHead {
   display: flex;
@@ -218,11 +221,17 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
-  height: 500px;
-  background-image: url('../img/zen_stones.jpeg');
+  padding-top: 40%;
+  min-height: 500px;
+  background-image: url('../img/leaves2.jpeg');
+  color: #EAEAEA;
+  box-sizing: border-box;
 }
-.subEssMP {
-  background-image: url('../img/zen_stones.jpg');
+#aboutUsDes {
+  padding-top: 5rem;
+}
+#aboutHead.hover {
+  box-shadow: 1px 1px 2rem #6B79B3;
 }
 .teamMember {
   display: flex;
@@ -231,15 +240,21 @@ a:visited {
   align-items: center;
   margin: 0.5rem 0 0.5rem 0;
   margin: 3rem 0 3rem 0;
+  width: 90%;
 }
 .mainPageProPic {
   height: auto;
   width: 25%;
+  border-radius: 5rem;
+  border: solid 3px #3D4566;
+  box-shadow: 0 0 1rem #6B79B3;
 }
 .teamTitle {
   background-color: #8A9CE6;
   text-align: center;
-  justify-self: auto;
+  padding: 2rem;
+  border: solid 3px #3D4566;
+  border-radius: 2rem;
 }
 .botBar {
   width: 100%;
