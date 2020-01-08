@@ -1,0 +1,105 @@
+// about page less
+
+
+.aboutHead {
+    .flex(column, space-between, center);
+    position: fixed;
+    color: @headColor;
+    background-color: @headBGC;
+    border: solid 3px @headerborder;
+    padding: 2.5rem;
+    top:0;
+    width:100%;
+}
+.aboutHeadLink{
+    color:@headColor;
+}
+.aboutHeadLink:visited{
+    color:@headColor;
+}
+.aboutSubhead{
+    .flex(column, space-between, center);
+    color: @headColor;
+    background-color: @headBGC;
+    border: solid 3px @headerborder;
+    padding: 2.5rem;
+    top:0;
+   
+    position: -webkit-sticky;
+    position: sticky;
+    
+}
+.aboutDesSubtitleBox{
+    background-image:url(../img/zen_stones.jpeg);
+    height:500px;
+    margin-top:9rem;
+    background-size: 400%;
+    .flex(column, space-between, center);
+
+}
+.aboutDes{
+    color:@desText;
+    background-color:@textBG;
+    border: solid 3px @headBGC;
+    border-radius: 2rem;
+    padding:2rem;
+    
+    text-align: center;
+}
+.aboutDesBox{
+    background-image: url(../img/leaves2.jpeg);
+}
+.aboutDesSubtitle{
+    color: @headColor;
+    .marginTB(2rem);
+
+}
+.teamBox{
+    .flex(column, space-between, center);
+    
+}
+.teamMemberA{
+    width:95%;
+    .marginTB(1rem);
+    padding:1rem;
+    .aboutProPic{
+        border-radius: 2rem;
+        border: solid 3px @headBGC;
+
+    }
+    .aName{
+        color:@desText;
+        background-color:@textBG;
+        border: solid 3px @headBGC;
+        border-radius: 2rem;
+        padding:2rem;
+        .marginTB(1rem);
+        text-align: center;
+
+    }
+    .aTeamTitle{
+        background-color:@textBG;
+        border: solid 3px @headBGC;
+        color:@desText;
+        border-radius: 2rem;
+        padding:2rem;
+        .marginTB(1rem);
+        padding:1rem;
+        text-align: center;
+    }
+    .aboutBio{
+        background-color:@textBG;
+        border: solid 3px @headBGC;
+        color:@desText;
+        border-radius: 2rem;
+        padding:2rem;
+        .marginTB(1rem);
+        padding:1rem;
+
+    }
+}
+
+.mainHead, .subHead {
+    position: -webkit-sticky;
+    position: sticky
+}

@@ -1,15 +1,11 @@
 // home-page.less
-.subHead {
-    position: -webkit-sticky;
-    position: sticky;
-}
+
 .mainHead {
     .flex(column, space-between, center);
     position: fixed;
     color: @headColor;
     background-color: @headBGC;
     border: solid 3px @headerborder;
-    
     padding: 2.5rem;
     top:0;
 
@@ -21,9 +17,9 @@
     padding-top:10rem;
     color: @desText;
     
-    // background-color: green;
+    
     background-image:url('../img/zen_stones.jpeg');
-    // background-attachment: fixed;
+    background-attachment: fixed;
     min-height:800px;
     background-size: 400%;
 }
@@ -32,44 +28,74 @@
     color: @headColor;
     background-color: @headBGC;
     border: solid 3px @headerborder;
-    
     padding: 2.5rem;
     top:0;
+    // position: -webkit-sticky;
+    // position: sticky;
     // bottom:0;
     // margin-top:96px;
     // top: 96px;
 }
+.aboutHeadLink{
+    color: @headColor;  
+}
+.aboutHeadLink:hover{
+   
+    text-shadow: 0 0 1rem @headerborder;
+    
+}
+.aboutHeadLink:visited{
+    color: @headColor;
+}
 .subDes {
     .flex(column, space-between, center);
     padding: 1.5rem;
-    padding-top:40%;
+    padding-top:20rem;
     min-height: 500px;
     background-image:url('../img/leaves2.jpeg');
-    // background-attachment: fixed;
+    background-attachment: fixed;
     color:@desText;
     box-sizing: border-box;
 }
+#desTextAboLnk{
+    color:@desText;
+    background-color: @textBG;
+    padding:2rem 6rem 2rem 6rem;
+    border: solid 3px @headBGC;
+    border-radius: 2rem;
+    
+}
+#desTextAboLnk:visited{
+    color:@desText;
+}
+#desTextAboLnk:hover{
+    background-color:@headBGC;
+    border-color:@textBG;
+    
+}
 #aboutUsDes{
+    .flex(column, space-evenly, center);
     padding-top:5rem;
 }
-#aboutHead.hover{
-    box-shadow:1px 1px 2rem @headerborder;
+#ourMisDes{
+    background-image: url('../img/leaves.jpeg');
 }
-// .subEssMP {
-//     background-image: url('../img/zen_stones.jpg');
-// }
+#getStarDes{
+    background-image: url('../img/grass_blades.jpeg');
+    background-size:200%;
+}
+
 .teamMember{
     .flex(row, space-between, center);
-    .marginTB(.5rem);
-    .marginLR(3rem);
-    // .paddingLR(.1rem);
-    width:90%;
+    margin:5rem 3rem 5rem 3rem;
+    .paddingLR(.1rem);
+    width:95%;
 }
 .mainPageProPic {
 
     height: auto;
     width: 25%;
-    border-radius:5rem;
+    border-radius:30rem;
     border: solid 3px @headBGC;
     box-shadow: 0 0 1rem @headerborder;
 
@@ -77,9 +103,12 @@
 .teamTitle {
     background-color:@textBG;
     text-align: center;
+    width:75%;
+    min-width: 280px;
     padding:2rem;
     border: solid 3px @headBGC;
     border-radius: 2rem;
+    box-shadow: 0 0 1rem @headerborder;
     // justify-self:left;
 }
 .botBar {
