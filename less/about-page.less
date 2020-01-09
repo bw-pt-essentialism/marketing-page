@@ -37,7 +37,7 @@
     background-attachment: fixed;
     height:500px;
     // margin-top:9rem;
-    background-size: 400%;
+    background-size: 300%;
     .flex(column, space-between, center);
 
 }
@@ -75,47 +75,60 @@
     .aboutProPic{
         border-radius: 2rem;
         border: solid 3px @headBGC;
-
     }
-    .aName{
-        font-size: 3rem;
-        color:@desText;
-        background-color:@textBG;
-        border: solid 3px @headBGC;
-        border-radius: @textBoxBorderRadius;
-        padding:2rem;
-        min-width: 65%;
-        .marginTB(1rem);
-        text-align: center;
-        text-shadow: .2rem .2rem .2rem @linkDarkHover;
-    }
-    .aTeamTitle{
-        background-color:@textBG;
-        border: solid 3px @headBGC;
-        color:@desText;
-        font-size: 2rem;
-        min-width: 50%;
-        border-radius: @textBoxBorderRadius;
-        padding:2rem;
-        .marginTB(1rem);
-        padding:1rem;
-        text-align: center;
-        text-shadow: .2rem .2rem .2rem @linkDarkHover;
-    }
-    .aboutBio{
-        background-color:@textBG;
-        border: solid 3px @headBGC;
-        color:@desText;
-        border-radius: @textBoxBorderRadius;
-        padding:2rem;
-        .marginTB(1rem);
-        padding:1rem;
-        text-shadow: .2rem .2rem .2rem @linkDarkHover;
-
-    }
+    
 }
+.aName{
+    font-size: 3rem;
+    color:@desText;
+    background-color:@textBG;
+    border: solid 3px @headBGC;
+    border-radius: @textBoxBorderRadius;
+    padding:2rem;
+    min-width:26rem;
+    .marginTB(1rem);
+    text-align: center;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+.aTeamTitle{
+    background-color:@textBG;
+    border: solid 3px @headBGC;
+    color:@desText;
+    font-size: 2rem;
+    min-width: 40%;
 
+    border-radius: @textBoxBorderRadius;
+    padding:2rem;
+    .marginTB(1rem);
+    padding:1rem;
+    text-align: center;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+.aboutBio{
+    background-color:@textBG;
+    border: solid 3px @headBGC;
+    color:@desText;
+    border-radius: @textBoxBorderRadius;
+    padding:2rem;
+    .marginTB(1rem);
+    padding:1rem;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+
+}
 .aboutHead, .aboutSubhead {
     position: -webkit-sticky;
     position: sticky
+}
+
+@media @tablet {
+    .aboutDesSubtitleBox{
+        min-height: 80rem;
+    }
+    .aName{
+        width: 55%;
+        max-width: 45rem;
+    }
+    .aTeamTitle{
+        max-width: 40%;
+    }
 }

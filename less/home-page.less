@@ -19,7 +19,7 @@
     background-image:url('../img/zen_stones.jpeg');
     background-attachment: fixed;
     min-height:500px;
-    background-size: 400%;
+    background-size: 300%;
 }
 
 .headComment{
@@ -32,12 +32,23 @@
 }
 
 .desText{
+    color:@desText;
     background-color:@textBG;
     border:solid 3px @headBGC;
     padding:2rem;
     width:95%;
     max-width:40rem;
     text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+.desTextLink{
+    color:@desText;
+    background-color:@textBG;
+    border:solid 3px @headBGC;
+    padding:2rem;
+    width:95%;
+    max-width:40rem;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+    text-align: center;
 }
 .subHead{
     .flex(column, space-between, center);
@@ -168,3 +179,26 @@
     position: sticky
 }
 
+@media @tablet {
+    .mainDes{
+        .flex(column, space-between, center);
+        min-height:80rem;
+    }
+    .headComment{
+        margin-top: 20rem;
+        max-width: 75%;
+    }
+    .subDes{
+        min-height:80rem;
+    }
+    .desText{
+        margin-top:20rem;
+        max-width:75%;
+    }
+    .desTextLink{
+        margin-top:20rem;
+    }
+    #desTextAboLnk{
+        margin:5rem;
+    }
+}
