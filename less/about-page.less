@@ -3,13 +3,14 @@
 
 .aboutHead {
     .flex(column, space-between, center);
-    position: fixed;
+    
     color: @headColor;
     background-color: @headBGC;
-    border: solid 3px @headerborder;
+    .borderTB(solid, 3px, @headerborder);
     padding: 2.5rem;
     top:0;
-    width:100%;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+    
 }
 .aboutHeadLink{
     color:@headColor;
@@ -21,18 +22,21 @@
     .flex(column, space-between, center);
     color: @headColor;
     background-color: @headBGC;
-    border: solid 3px @headerborder;
+    .borderTB(solid, 3px, @headerborder);
     padding: 2.5rem;
+
     top:0;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
    
-    position: -webkit-sticky;
-    position: sticky;
+    // position: -webkit-sticky;
+    // position: sticky;
     
 }
 .aboutDesSubtitleBox{
     background-image:url(../img/zen_stones.jpeg);
+    background-attachment: fixed;
     height:500px;
-    margin-top:9rem;
+    // margin-top:9rem;
     background-size: 400%;
     .flex(column, space-between, center);
 
@@ -48,10 +52,15 @@
 }
 .aboutDesBox{
     background-image: url(../img/leaves2.jpeg);
+    background-attachment: fixed;
 }
 .aboutDesSubtitle{
     color: @headColor;
+    background-color: @textBG;
+    padding:2rem;
+    border:solid 3px @headBGC;
     .marginTB(2rem);
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
 
 }
 .teamBox{
@@ -60,46 +69,53 @@
 }
 .teamMemberA{
     width:95%;
-    .marginTB(1rem);
+    .marginTB(2rem);
     padding:1rem;
+    .flex(column, space-between, center);
     .aboutProPic{
         border-radius: 2rem;
         border: solid 3px @headBGC;
 
     }
     .aName{
+        font-size: 3rem;
         color:@desText;
         background-color:@textBG;
         border: solid 3px @headBGC;
-        border-radius: 2rem;
+        border-radius: @textBoxBorderRadius;
         padding:2rem;
+        min-width: 65%;
         .marginTB(1rem);
         text-align: center;
-
+        text-shadow: .2rem .2rem .2rem @linkDarkHover;
     }
     .aTeamTitle{
         background-color:@textBG;
         border: solid 3px @headBGC;
         color:@desText;
-        border-radius: 2rem;
+        font-size: 2rem;
+        min-width: 50%;
+        border-radius: @textBoxBorderRadius;
         padding:2rem;
         .marginTB(1rem);
         padding:1rem;
         text-align: center;
+        text-shadow: .2rem .2rem .2rem @linkDarkHover;
     }
     .aboutBio{
         background-color:@textBG;
         border: solid 3px @headBGC;
         color:@desText;
-        border-radius: 2rem;
+        border-radius: @textBoxBorderRadius;
         padding:2rem;
         .marginTB(1rem);
         padding:1rem;
+        text-shadow: .2rem .2rem .2rem @linkDarkHover;
 
     }
 }
 
-.mainHead, .subHead {
+.aboutHead, .aboutSubhead {
     position: -webkit-sticky;
     position: sticky
 }

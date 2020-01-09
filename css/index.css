@@ -146,10 +146,6 @@ h5 {
 h1 {
   font-size: 4rem;
 }
-h2 {
-  font-size: 2.8rem;
-  padding-bottom: 10px;
-}
 h4 {
   font-size: 2rem;
   padding-bottom: 10px;
@@ -165,10 +161,16 @@ img {
 }
 a {
   text-decoration: none;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
 }
 a:visited {
   text-decoration: none;
-  color: black;
+}
+h2 {
+  font-size: 3rem;
+  padding-bottom: 10px;
 }
 .container {
   max-width: 800px;
@@ -180,12 +182,13 @@ a:visited {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   color: #FFFFFF;
   background-color: #3D4566;
-  border: solid 3px #6B79B3;
+  border-top: solid 3px #6B79B3;
+  border-bottom: solid 3px #6B79B3;
   padding: 2.5rem;
   top: 0;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
 .mainDes {
   display: flex;
@@ -198,8 +201,23 @@ a:visited {
   color: #EAEAEA;
   background-image: url('../img/zen_stones.jpeg');
   background-attachment: fixed;
-  min-height: 800px;
+  min-height: 500px;
   background-size: 400%;
+}
+.headComment {
+  background-color: #8A9CE6;
+  border: solid 3px #3D4566;
+  padding: 2rem;
+  width: 95%;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.desText {
+  background-color: #8A9CE6;
+  border: solid 3px #3D4566;
+  padding: 2rem;
+  width: 95%;
+  max-width: 40rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
 .subHead {
   display: flex;
@@ -208,12 +226,16 @@ a:visited {
   align-items: center;
   color: #FFFFFF;
   background-color: #3D4566;
-  border: solid 3px #6B79B3;
+  border-top: solid 3px #6B79B3;
+  border-bottom: solid 3px #6B79B3;
   padding: 2.5rem;
   top: 0;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
 .aboutHeadLink {
   color: #FFFFFF;
+  font-size: 3rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
 .aboutHeadLink:hover {
   text-shadow: 0 0 1rem #6B79B3;
@@ -239,7 +261,8 @@ a:visited {
   background-color: #8A9CE6;
   padding: 2rem 6rem 2rem 6rem;
   border: solid 3px #3D4566;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
 #desTextAboLnk:visited {
   color: #EAEAEA;
@@ -281,17 +304,35 @@ a:visited {
 .teamTitle {
   background-color: #8A9CE6;
   text-align: center;
-  width: 75%;
-  min-width: 280px;
+  width: 65%;
   padding: 2rem;
   border: solid 3px #3D4566;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0 1rem #6B79B3;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
 .botBar {
   width: 100%;
-  height: 0.5rem;
-  background-color: #142770;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #3D4566;
+  border-top: solid 3px #6B79B3;
+  border-bottom: solid 3px #6B79B3;
+  height: 5rem;
+  padding: 0.5rem 0;
+}
+.botNavButton {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.botNavButton:hover {
+  text-shadow: 0 0 1rem #142770;
+}
+.botNavButton:visited {
+  color: white;
 }
 .mainHead,
 .subHead {
@@ -303,13 +344,13 @@ a:visited {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   color: #FFFFFF;
   background-color: #3D4566;
-  border: solid 3px #6B79B3;
+  border-top: solid 3px #6B79B3;
+  border-bottom: solid 3px #6B79B3;
   padding: 2.5rem;
   top: 0;
-  width: 100%;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
 .aboutHeadLink {
   color: #FFFFFF;
@@ -324,16 +365,16 @@ a:visited {
   align-items: center;
   color: #FFFFFF;
   background-color: #3D4566;
-  border: solid 3px #6B79B3;
+  border-top: solid 3px #6B79B3;
+  border-bottom: solid 3px #6B79B3;
   padding: 2.5rem;
   top: 0;
-  position: -webkit-sticky;
-  position: sticky;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
 .aboutDesSubtitleBox {
   background-image: url(../img/zen_stones.jpeg);
+  background-attachment: fixed;
   height: 500px;
-  margin-top: 9rem;
   background-size: 400%;
   display: flex;
   flex-direction: column;
@@ -350,10 +391,15 @@ a:visited {
 }
 .aboutDesBox {
   background-image: url(../img/leaves2.jpeg);
+  background-attachment: fixed;
 }
 .aboutDesSubtitle {
   color: #FFFFFF;
+  background-color: #8A9CE6;
+  padding: 2rem;
+  border: solid 3px #3D4566;
   margin: 2rem 0 2rem 0;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
 .teamBox {
   display: flex;
@@ -363,43 +409,54 @@ a:visited {
 }
 .teamMemberA {
   width: 95%;
-  margin: 1rem 0 1rem 0;
+  margin: 2rem 0 2rem 0;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .teamMemberA .aboutProPic {
   border-radius: 2rem;
   border: solid 3px #3D4566;
 }
 .teamMemberA .aName {
+  font-size: 3rem;
   color: #EAEAEA;
   background-color: #8A9CE6;
   border: solid 3px #3D4566;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   padding: 2rem;
+  min-width: 65%;
   margin: 1rem 0 1rem 0;
   text-align: center;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
 .teamMemberA .aTeamTitle {
   background-color: #8A9CE6;
   border: solid 3px #3D4566;
   color: #EAEAEA;
-  border-radius: 2rem;
+  font-size: 2rem;
+  min-width: 50%;
+  border-radius: 0.5rem;
   padding: 2rem;
   margin: 1rem 0 1rem 0;
   padding: 1rem;
   text-align: center;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
 .teamMemberA .aboutBio {
   background-color: #8A9CE6;
   border: solid 3px #3D4566;
   color: #EAEAEA;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   padding: 2rem;
   margin: 1rem 0 1rem 0;
   padding: 1rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
-.mainHead,
-.subHead {
+.aboutHead,
+.aboutSubhead {
   position: -webkit-sticky;
   position: sticky;
 }

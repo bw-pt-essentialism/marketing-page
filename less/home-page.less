@@ -2,13 +2,13 @@
 
 .mainHead {
     .flex(column, space-between, center);
-    position: fixed;
+    
     color: @headColor;
     background-color: @headBGC;
-    border: solid 3px @headerborder;
+    .borderTB(solid, 3px, @headerborder);
     padding: 2.5rem;
     top:0;
-
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
 }
 .mainDes {
     .flex(column, space-between, center);
@@ -16,37 +16,55 @@
     padding: 5rem;
     padding-top:10rem;
     color: @desText;
-    
-    
     background-image:url('../img/zen_stones.jpeg');
     background-attachment: fixed;
-    min-height:800px;
+    min-height:500px;
     background-size: 400%;
+}
+
+.headComment{
+    background-color:@textBG;
+    border:solid 3px @headBGC;
+    padding:2rem;
+    width: 95%;
+    
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+
+.desText{
+    background-color:@textBG;
+    border:solid 3px @headBGC;
+    padding:2rem;
+    width:95%;
+    max-width:40rem;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
 }
 .subHead{
     .flex(column, space-between, center);
     color: @headColor;
     background-color: @headBGC;
-    border: solid 3px @headerborder;
+    .borderTB(solid, 3px, @headerborder);
     padding: 2.5rem;
+
     top:0;
-    // position: -webkit-sticky;
-    // position: sticky;
-    // bottom:0;
-    // margin-top:96px;
-    // top: 96px;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
 }
+
 .aboutHeadLink{
     color: @headColor;  
-}
-.aboutHeadLink:hover{
-   
-    text-shadow: 0 0 1rem @headerborder;
+    font-size: 3rem;
     
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
 }
+
+.aboutHeadLink:hover{
+    text-shadow: 0 0 1rem @headerborder;
+}
+
 .aboutHeadLink:visited{
     color: @headColor;
 }
+
 .subDes {
     .flex(column, space-between, center);
     padding: 1.5rem;
@@ -57,29 +75,35 @@
     color:@desText;
     box-sizing: border-box;
 }
+
 #desTextAboLnk{
     color:@desText;
     background-color: @textBG;
     padding:2rem 6rem 2rem 6rem;
     border: solid 3px @headBGC;
-    border-radius: 2rem;
-    
+    border-radius: @textBoxBorderRadius;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
 }
+
 #desTextAboLnk:visited{
     color:@desText;
 }
+
 #desTextAboLnk:hover{
     background-color:@headBGC;
     border-color:@textBG;
-    
 }
+
 #aboutUsDes{
     .flex(column, space-evenly, center);
     padding-top:5rem;
+   
 }
+
 #ourMisDes{
     background-image: url('../img/leaves.jpeg');
 }
+
 #getStarDes{
     background-image: url('../img/grass_blades.jpeg');
     background-size:200%;
@@ -91,6 +115,7 @@
     .paddingLR(.1rem);
     width:95%;
 }
+
 .mainPageProPic {
 
     height: auto;
@@ -100,22 +125,44 @@
     box-shadow: 0 0 1rem @headerborder;
 
 }
+
 .teamTitle {
     background-color:@textBG;
     text-align: center;
-    width:75%;
-    min-width: 280px;
+    width:65%;
+    // min-width: 280px;
     padding:2rem;
     border: solid 3px @headBGC;
-    border-radius: 2rem;
+    border-radius: @textBoxBorderRadius;
     box-shadow: 0 0 1rem @headerborder;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
     // justify-self:left;
 }
+
 .botBar {
     width: 100%;
-    height: .5rem;
-    background-color: @darkRichBlue;
+    .flex(row, space-evenly, center);
+    background-color: @headBGC;
+    .borderTB(solid, 3px, @headerborder);
+    height: 5rem;
+    padding: .5rem 0;
+    
 }
+
+.botNavButton{
+    color:white;
+    font-size: 1.5rem;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+
+.botNavButton:hover{
+    text-shadow: 0 0 1rem @linkDarkHover;
+}
+
+.botNavButton:visited{
+    color:white;
+}
+
 .mainHead, .subHead {
     position: -webkit-sticky;
     position: sticky
