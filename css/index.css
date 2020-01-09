@@ -329,6 +329,13 @@ a:visited {
   box-shadow: 0 0 1rem #6B79B3;
   text-shadow: 0.2rem 0.2rem 0.2rem #142770;
 }
+.teamList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
 .botBar {
   width: 100%;
   display: flex;
@@ -381,6 +388,16 @@ a:visited {
   }
   #desTextAboLnk {
     margin: 5rem;
+  }
+}
+@media (min-width:1000px) {
+  .teamMember {
+    width: 43%;
+  }
+  .teamList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 .aboutHead {

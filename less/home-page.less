@@ -158,7 +158,10 @@
     text-shadow: .2rem .2rem .2rem @linkDarkHover;
     // justify-self:left;
 }
-
+.teamList{
+    .flex(column, space-between, center);
+    width:95%;
+}
 .botBar {
     width: 100%;
     .flex(row, space-evenly, center);
@@ -209,5 +212,20 @@
     }
     #desTextAboLnk{
         margin:5rem;
+    }
+}
+@media @desktop {
+    .teamMember{
+       width: 43%;
+    }
+    .teamList{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    
+    }
+    #aboutUsDes{
+        
     }
 }
