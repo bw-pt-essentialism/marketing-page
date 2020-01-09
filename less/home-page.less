@@ -32,6 +32,7 @@
 }
 
 .desText{
+    text-align: center;
     color:@desText;
     background-color:@textBG;
     border:solid 3px @headBGC;
@@ -43,12 +44,19 @@
 .desTextLink{
     color:@desText;
     background-color:@textBG;
+    border-radius: @textBoxBorderRadius;
     border:solid 3px @headBGC;
     padding:2rem;
     width:95%;
     max-width:40rem;
     text-shadow: .2rem .2rem .2rem @linkDarkHover;
     text-align: center;
+}
+.desTextLink:hover{
+    background-color:@headBGC;
+    border-color:@textBG;
+ 
+    box-shadow: 0 0 2rem @textBG
 }
 .subHead{
     .flex(column, space-between, center);
@@ -103,6 +111,7 @@
 #desTextAboLnk:hover{
     background-color:@headBGC;
     border-color:@textBG;
+    box-shadow: 0 0 2rem @textBG
 }
 
 #aboutUsDes{
