@@ -547,6 +547,7 @@ a:visited {
   .teamBox {
     flex-direction: row;
     flex-flow: wrap;
+    align-items: stretch;
     justify-content: space-evenly;
   }
   .teamMemberA {
