@@ -1,0 +1,156 @@
+// about page less
+
+
+.aboutHead {
+    .flex(column, space-between, center);
+    
+    color: @headColor;
+    background-color: @headBGC;
+    .borderTB(solid, 3px, @headerborder);
+    padding: 2.5rem;
+    top:0;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+    
+}
+.aboutHeadLink{
+    color:@headColor;
+}
+.aboutHeadLink:visited{
+    color:@headColor;
+}
+.aboutSubhead{
+    .flex(column, space-between, center);
+    color: @headColor;
+    background-color: @headBGC;
+    .borderTB(solid, 3px, @headerborder);
+    padding: 2.5rem;
+
+    top:0;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+   
+    // position: -webkit-sticky;
+    // position: sticky;
+    
+}
+.aboutDesSubtitleBox{
+    background-image:url(../img/zen_stones.jpeg);
+    background-attachment: fixed;
+    height:500px;
+    // margin-top:9rem;
+    background-size: 300%;
+    .flex(column, space-between, center);
+
+}
+.aboutDes{
+    color:@desText;
+    background-color:@textBG;
+    border: solid 3px @headBGC;
+    border-radius: 2rem;
+    padding:2rem;
+    
+    text-align: center;
+}
+.aboutDesBox{
+    background-image: url(../img/leaves2.jpeg);
+    background-attachment: fixed;
+}
+.aboutDesSubtitle{
+    color: @headColor;
+    background-color: @textBG;
+    padding:2rem;
+    border:solid 3px @headBGC;
+    margin-top:10rem;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+
+}
+.teamBox{
+    .flex(column, space-between, center);
+    
+}
+.teamMemberA{
+    width:95%;
+    .marginTB(2rem);
+    padding:1rem;
+    .flex(column, space-between, center);
+    .aboutProPic{
+        border-radius: 2rem;
+        border: solid 3px @headBGC;
+        
+    }
+    
+}
+.aName{
+    font-size: 3rem;
+    color:@desText;
+    background-color:@textBG;
+    border: solid 3px @headBGC;
+    border-radius: @textBoxBorderRadius;
+    padding:2rem;
+    width:50%;
+    min-width:30rem;
+    .marginTB(1rem);
+    text-align: center;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+.aTeamTitle{
+    background-color:@textBG;
+    border: solid 3px @headBGC;
+    color:@desText;
+    font-size: 2rem;
+    width:45%;
+    min-width: 26rem;
+    border-radius: @textBoxBorderRadius;
+    padding:2rem;
+    .marginTB(1rem);
+    padding:1rem;
+    text-align: center;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+.aboutBio{
+    background-color:@textBG;
+    border: solid 3px @headBGC;
+    color:@desText;
+    border-radius: @textBoxBorderRadius;
+    padding:2rem;
+    width:45%;
+    min-width: 26rem;
+    .marginTB(1rem);
+    padding:1rem;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+
+}
+.aboutHead, .aboutSubhead {
+    position: -webkit-sticky;
+    position: sticky
+}
+
+@media @tablet {
+    .aboutDesSubtitleBox{
+        min-height: 80rem;
+    }
+    .aboutDesSubtitle{
+        margin-top:40rem;
+    }
+    .aName{
+        width: 55%;
+        max-width: 45rem;
+    }
+    .aTeamTitle{
+        max-width: 40rem;
+    }
+    .aboutBio{
+        max-width: 40rem;
+    }
+}
+
+@media @desktop {
+    .teamBox{
+        flex-direction: row;
+        flex-flow: wrap;
+        align-items: stretch;
+        justify-content: space-evenly;
+    }
+    .teamMemberA{
+        width:45%;
+    }
+}

@@ -1,0 +1,556 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+a:visited {
+  text-decoration: none;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.mainHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #3D4566;
+  border-top: solid 3px #6B79B3;
+  border-bottom: solid 3px #6B79B3;
+  padding: 2.5rem;
+  top: 0;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.mainDes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 5rem;
+  padding-top: 10rem;
+  color: #EAEAEA;
+  background-image: url('../img/zen_stones.jpeg');
+  background-attachment: fixed;
+  min-height: 500px;
+  background-size: 300%;
+}
+.headComment {
+  background-color: #8A9CE6;
+  border: solid 3px #3D4566;
+  padding: 2rem;
+  width: 95%;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.desText {
+  text-align: center;
+  color: #EAEAEA;
+  background-color: #8A9CE6;
+  border: solid 3px #3D4566;
+  padding: 2rem;
+  width: 95%;
+  max-width: 40rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.desTextLink {
+  color: #EAEAEA;
+  background-color: #8A9CE6;
+  border-radius: 0.5rem;
+  border: solid 3px #3D4566;
+  padding: 2rem;
+  width: 95%;
+  max-width: 40rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+  text-align: center;
+}
+.desTextLink:hover {
+  background-color: #3D4566;
+  border-color: #8A9CE6;
+  box-shadow: 0 0 2rem #8A9CE6;
+}
+.subHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #3D4566;
+  border-top: solid 3px #6B79B3;
+  border-bottom: solid 3px #6B79B3;
+  padding: 2.5rem;
+  top: 0;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.aboutHeadLink {
+  color: #FFFFFF;
+  font-size: 3rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.aboutHeadLink:hover {
+  text-shadow: 0 0 1rem #6B79B3;
+}
+.aboutHeadLink:visited {
+  color: #FFFFFF;
+}
+.subDes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  padding-top: 20rem;
+  min-height: 500px;
+  background-image: url('../img/leaves2.jpeg');
+  background-attachment: fixed;
+  color: #EAEAEA;
+  box-sizing: border-box;
+}
+#desTextAboLnk {
+  color: #EAEAEA;
+  background-color: #8A9CE6;
+  padding: 2rem 6rem 2rem 6rem;
+  border: solid 3px #3D4566;
+  border-radius: 0.5rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+#desTextAboLnk:visited {
+  color: #EAEAEA;
+}
+#desTextAboLnk:hover {
+  background-color: #3D4566;
+  border-color: #8A9CE6;
+  box-shadow: 0 0 2rem #8A9CE6;
+}
+#aboutUsDes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 5rem;
+}
+#ourMisDes {
+  background-image: url('../img/leaves.jpeg');
+}
+#getStarDes {
+  background-image: url('../img/grass_blades.jpeg');
+  background-size: 200%;
+}
+.teamMember {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 3rem 5rem 3rem;
+  padding: 0 0.1rem 0 0.1rem;
+  width: 95%;
+}
+.mainPageProPic {
+  height: auto;
+  width: 25%;
+  border-radius: 30rem;
+  border: solid 3px #3D4566;
+  box-shadow: 0 0 1rem #6B79B3;
+}
+.teamTitle {
+  background-color: #8A9CE6;
+  text-align: center;
+  width: 65%;
+  padding: 2rem;
+  border: solid 3px #3D4566;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem #6B79B3;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.teamList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+.botBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #3D4566;
+  border-top: solid 3px #6B79B3;
+  border-bottom: solid 3px #6B79B3;
+  height: 5rem;
+  padding: 0.5rem 0;
+}
+.botNavButton {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.botNavButton:hover {
+  text-shadow: 0 0 1rem #142770;
+}
+.botNavButton:visited {
+  color: white;
+}
+.mainHead,
+.subHead {
+  position: -webkit-sticky;
+  position: sticky;
+}
+@media (min-width:800px) {
+  .mainDes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80rem;
+  }
+  .headComment {
+    margin-top: 20rem;
+    max-width: 75%;
+  }
+  .subDes {
+    min-height: 80rem;
+  }
+  .desText {
+    margin-top: 20rem;
+    max-width: 75%;
+  }
+  .desTextLink {
+    margin-top: 20rem;
+  }
+  #desTextAboLnk {
+    margin: 5rem;
+  }
+}
+@media (min-width:1000px) {
+  .teamMember {
+    width: 43%;
+  }
+  .teamList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.aboutHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #3D4566;
+  border-top: solid 3px #6B79B3;
+  border-bottom: solid 3px #6B79B3;
+  padding: 2.5rem;
+  top: 0;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.aboutHeadLink {
+  color: #FFFFFF;
+}
+.aboutHeadLink:visited {
+  color: #FFFFFF;
+}
+.aboutSubhead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #3D4566;
+  border-top: solid 3px #6B79B3;
+  border-bottom: solid 3px #6B79B3;
+  padding: 2.5rem;
+  top: 0;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.aboutDesSubtitleBox {
+  background-image: url(../img/zen_stones.jpeg);
+  background-attachment: fixed;
+  height: 500px;
+  background-size: 300%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutDes {
+  color: #EAEAEA;
+  background-color: #8A9CE6;
+  border: solid 3px #3D4566;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+.aboutDesBox {
+  background-image: url(../img/leaves2.jpeg);
+  background-attachment: fixed;
+}
+.aboutDesSubtitle {
+  color: #FFFFFF;
+  background-color: #8A9CE6;
+  padding: 2rem;
+  border: solid 3px #3D4566;
+  margin-top: 10rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.teamBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.teamMemberA {
+  width: 95%;
+  margin: 2rem 0 2rem 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.teamMemberA .aboutProPic {
+  border-radius: 2rem;
+  border: solid 3px #3D4566;
+}
+.aName {
+  font-size: 3rem;
+  color: #EAEAEA;
+  background-color: #8A9CE6;
+  border: solid 3px #3D4566;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 50%;
+  min-width: 30rem;
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.aTeamTitle {
+  background-color: #8A9CE6;
+  border: solid 3px #3D4566;
+  color: #EAEAEA;
+  font-size: 2rem;
+  width: 45%;
+  min-width: 26rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.aboutBio {
+  background-color: #8A9CE6;
+  border: solid 3px #3D4566;
+  color: #EAEAEA;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 45%;
+  min-width: 26rem;
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem #142770;
+}
+.aboutHead,
+.aboutSubhead {
+  position: -webkit-sticky;
+  position: sticky;
+}
+@media (min-width:800px) {
+  .aboutDesSubtitleBox {
+    min-height: 80rem;
+  }
+  .aboutDesSubtitle {
+    margin-top: 40rem;
+  }
+  .aName {
+    width: 55%;
+    max-width: 45rem;
+  }
+  .aTeamTitle {
+    max-width: 40rem;
+  }
+  .aboutBio {
+    max-width: 40rem;
+  }
+}
+@media (min-width:1000px) {
+  .teamBox {
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+  }
+  .teamMemberA {
+    width: 45%;
+  }
+}

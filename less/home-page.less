@@ -1,0 +1,231 @@
+// home-page.less
+
+.mainHead {
+    .flex(column, space-between, center);
+    
+    color: @headColor;
+    background-color: @headBGC;
+    .borderTB(solid, 3px, @headerborder);
+    padding: 2.5rem;
+    top:0;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+.mainDes {
+    .flex(column, space-between, center);
+    text-align: center;
+    padding: 5rem;
+    padding-top:10rem;
+    color: @desText;
+    background-image:url('../img/zen_stones.jpeg');
+    background-attachment: fixed;
+    min-height:500px;
+    background-size: 300%;
+}
+
+.headComment{
+    background-color:@textBG;
+    border:solid 3px @headBGC;
+    padding:2rem;
+    width: 95%;
+    
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+
+.desText{
+    text-align: center;
+    color:@desText;
+    background-color:@textBG;
+    border:solid 3px @headBGC;
+    padding:2rem;
+    width:95%;
+    max-width:40rem;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+.desTextLink{
+    color:@desText;
+    background-color:@textBG;
+    border-radius: @textBoxBorderRadius;
+    border:solid 3px @headBGC;
+    padding:2rem;
+    width:95%;
+    max-width:40rem;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+    text-align: center;
+}
+.desTextLink:hover{
+    background-color:@headBGC;
+    border-color:@textBG;
+ 
+    box-shadow: 0 0 2rem @textBG
+}
+.subHead{
+    .flex(column, space-between, center);
+    color: @headColor;
+    background-color: @headBGC;
+    .borderTB(solid, 3px, @headerborder);
+    padding: 2.5rem;
+
+    top:0;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+
+.aboutHeadLink{
+    color: @headColor;  
+    font-size: 3rem;
+    
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+
+.aboutHeadLink:hover{
+    text-shadow: 0 0 1rem @headerborder;
+}
+
+.aboutHeadLink:visited{
+    color: @headColor;
+}
+
+.subDes {
+    .flex(column, space-between, center);
+    padding: 1.5rem;
+    padding-top:20rem;
+    min-height: 500px;
+    background-image:url('../img/leaves2.jpeg');
+    background-attachment: fixed;
+    color:@desText;
+    box-sizing: border-box;
+}
+
+#desTextAboLnk{
+    color:@desText;
+    background-color: @textBG;
+    padding:2rem 6rem 2rem 6rem;
+    border: solid 3px @headBGC;
+    border-radius: @textBoxBorderRadius;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+
+#desTextAboLnk:visited{
+    color:@desText;
+}
+
+#desTextAboLnk:hover{
+    background-color:@headBGC;
+    border-color:@textBG;
+    box-shadow: 0 0 2rem @textBG
+}
+
+#aboutUsDes{
+    .flex(column, space-evenly, center);
+    padding-top:5rem;
+   
+}
+
+#ourMisDes{
+    background-image: url('../img/leaves.jpeg');
+}
+
+#getStarDes{
+    background-image: url('../img/grass_blades.jpeg');
+    background-size:200%;
+}
+
+.teamMember{
+    .flex(row, space-between, center);
+    margin:5rem 3rem 5rem 3rem;
+    .paddingLR(.1rem);
+    width:95%;
+}
+
+.mainPageProPic {
+
+    height: auto;
+    width: 25%;
+    border-radius:30rem;
+    border: solid 3px @headBGC;
+    box-shadow: 0 0 1rem @headerborder;
+
+}
+
+.teamTitle {
+    background-color:@textBG;
+    text-align: center;
+    width:65%;
+    // min-width: 280px;
+    padding:2rem;
+    border: solid 3px @headBGC;
+    border-radius: @textBoxBorderRadius;
+    box-shadow: 0 0 1rem @headerborder;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+    // justify-self:left;
+}
+.teamList{
+    .flex(column, space-between, center);
+    width:95%;
+}
+.botBar {
+    width: 100%;
+    .flex(row, space-evenly, center);
+    background-color: @headBGC;
+    .borderTB(solid, 3px, @headerborder);
+    height: 5rem;
+    padding: .5rem 0;
+    
+}
+
+.botNavButton{
+    color:white;
+    font-size: 1.5rem;
+    text-shadow: .2rem .2rem .2rem @linkDarkHover;
+}
+
+.botNavButton:hover{
+    text-shadow: 0 0 1rem @linkDarkHover;
+}
+
+.botNavButton:visited{
+    color:white;
+}
+
+.mainHead, .subHead {
+    position: -webkit-sticky;
+    position: sticky
+}
+
+@media @tablet {
+    .mainDes{
+        .flex(column, space-between, center);
+        min-height:80rem;
+    }
+    .headComment{
+        margin-top: 20rem;
+        max-width: 75%;
+    }
+    .subDes{
+        min-height:80rem;
+    }
+    .desText{
+        margin-top:20rem;
+        max-width:75%;
+    }
+    .desTextLink{
+        margin-top:20rem;
+    }
+    #desTextAboLnk{
+        margin:5rem;
+    }
+}
+@media @desktop {
+    .teamMember{
+       width: 43%;
+    }
+    .teamList{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    
+    }
+    #aboutUsDes{
+        
+    }
+}
